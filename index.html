@@ -1,0 +1,489 @@
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-e
+        quiv="x-ua-compatible" content="ie=edge">
+        <title>Septer Maikel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/assets/foto/foto.png" />
+
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link rel="stylesheet" href="assets/css/style4.css">
+            <link rel="stylesheet" href="assets/css/audio.css">
+            <style>
+                .aclass{
+                    color: brown;
+                }
+                .aclass:hover{
+                    color: #800098;
+                }
+            </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           
+            
+   </head>
+
+   <body>
+
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/foto/icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <!-- <audio hidden autoplay loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio
+    </audio> -->
+
+
+    <a href="#play" class="play-btn d-none" id="play-btn">
+        <img src="assets/foto/play-button.png" width="20" alt="" />
+    </a>
+    <a href="#pause" class="pause-btn d-none" id="pause-btn">
+        <img src="assets/foto/pause.png" width="20" alt="" />
+    </a>
+
+
+    <!-- Bottom Navbar -->
+    <nav class="d-none navbar navbar-dark navbar-expand fixed-bottom" style="background-color: #fff; border-radius: 25px; bottom: 34px; border-color: #C39A61" id="navbar">
+        <ul class="navbar-nav nav-justified w-100">
+          <li class="nav-item">
+            <a href="#top" class="nav-link">
+                <img src="assets/foto/home.png" class="img-fluid" width="40">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#amplop" class="nav-link">
+                <img src="assets/foto/email.png" class="img-fluid" width="40">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#buku-tamu" class="nav-link">
+                <img src="assets/foto/chat.png" class="img-fluid" width="40">
+            </a>
+          </li>
+          
+        </ul>
+    </nav>
+
+    <main>
+
+    <audio id="audio" src="music.mp3"></audio>
+    <div class="container" id="cover-depan" style="background-image: url('assets/foto/bg-opening.png'); width: 100%; background-repeat: no-repeat; background-size: cover; padding-top: 10%;">
+            <div class="circle-caption">
+                    <center>
+                        <h1 class="text-black font-weight-bold h1">Brithday Party</h1>
+                        <h3 class="text-black font-weight-bold h2">Septer Maikel</h3>
+                        <div id="countdown" class="mt-3 " style="padding-bottom:100px;">
+                            <div class="row ">
+                                <div class="col-3">
+                                    <div style=" border: 2px solid #2B4641;
+                                    padding: 8px;
+                                    border-radius: 10px;
+                                    width: 58px;
+                                    height: 72px;
+                                    background-color: #2B4641;
+                                    
+                                    ">
+                                        <p class="text-center text-white">
+                                            <span class="numbers days waktu-mundur" style="font-size: 13px;">
+                                                00
+                                            </span>
+                                            <span style="font-size: 13px;" class="waktu-mundur">
+                                                Hari
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3 ">
+                                    <div style=" border: 2px solid #2B4641;
+                                    padding: 8px;
+                                    border-radius: 10px;
+                                    width: 58px;
+                                    height: 72px;
+                                    background-color: #2B4641;
+                                    ">
+                                        <p class="text-center text-white">
+                                            <span class="numbers hours waktu-mundur" style="font-size: 13px;">00</span>
+                                            <span  class="waktu-mundur" style="font-size: 13px;">Jam</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div style=" border: 2px solid #2B4641;
+                                    padding: 8px;
+                                    border-radius: 10px;
+                                    width: 58px;
+                                    height: 72px;
+                                    background-color: #2B4641;
+                                    ">
+                                        <p class="text-center text-white">
+                                            <span class="numbers minutes waktu-mundur" style="font-size: 13px;">00</span>
+                                            <span class="waktu-mundur" style="font-size: 13px;">Menit</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div style=" border: 2px solid #2B4641;
+                                    padding: 8px;
+                                    border-radius: 10px;
+                                    width: 58px;
+                                    height: 72px;
+                                    background-color: #2B4641;
+                                    ">
+                                        <p class="text-center text-white">
+                                            <span class="numbers seconds waktu-mundur" style="font-size: 13px;">00</span>
+                                            <span class="waktu-mundur" style="font-size: 13px;">Detik</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/foto/Foto.png"width="30%" alt="" srcset="">
+                            </div>
+                        </div>
+                        <p class="text-opening" >Kepada Temanku </p>
+                        <div class="card" style="width: 18rem; margin-bottom: 11px;">
+                            <div class="card-body">
+                                <p class="card-text rounded-0 font-weight-bold text-black">
+                                   Ade Sam
+                                </p>
+                            </div>
+                        </div>
+                        <p style="padding-left: 30px; padding-right:30px; margin-bottom: 18px; color:#EEB23C;">
+                            <!-- Tanpa mengurangi rasa Hormat, Kami 
+                            mengundang anda untuk hadir di acara 
+                            pernikahan kami. -->
+                        </p>
+                        <a href="#" class="btn btn-buka" id="btn-buka">
+                            Buka Undangan
+                        </a>
+                        <br><br><br>
+                    </center>
+            </div>
+        </div>
+        <div class="d-none" id="isi">
+                <div class="container" style="background-image: url('assets/foto/bg-2.png'); width: 100%; background-repeat: no-repeat; background-size: cover; padding-top: 10%; padding-bottom:10px">
+                    <div class="circle-caption" id="lokasi">
+                        <div class="row text-center " data-aos-duration="3000">
+                            <div class="col" >
+                                <h1 class="teks-1">Hai Temanku</h1>
+                                <div class="teks-2">
+                                    <p class="teks-2-1 mb-2">Datang ya diacara ulang tahun ku pada :</p>
+                                    <br></br>
+                                    <p class="teks-2 mb-0"> Tanggal : 15 September 2025</p>
+                                    <p class="teks-2 mb-0">Jam : 17:00 WIT</p>
+                                    <p class="teks-2 mb-0">Alamat : Waena</p>
+                                </div>
+                                <br><br>
+                                <a href="#" class="btn btn-buka"> Peta Lokasi</a>
+                            </div>
+                
+                        </div>
+                        <center>
+                            <img src="assets/foto/Foto2.png" data-aos-duration="3000" class="img-fluid" width="228" alt=""  style="margin-top: 100px;">
+                        </center>
+                        <br><br><br>
+                        <div class="text-center">
+                            <h1 class="text-black font-weight-bold h1">Brithday Party</h1>
+                            <h3 class="text-black font-weight-bold h2">Septer Maikel</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="amplop" class="container" style="background-image: url('assets/foto/bg-3.png'); width: 100%; background-repeat: no-repeat; background-size: cover; padding-top: 10%; padding-bottom:10px">
+                    <div class="circle-caption">
+                        <center>
+                            <h1 class="teks-1">Amplod Digital</h1>
+                            <img src="" class="img-fluid" width="184" alt=""  style="margin-top: 50px;">
+                            <div class="card" style="border-radius: 10px; background-color:#fff; margin-bottom:15px;">
+                                <div class="card-body">
+                                    <img src="assets/foto/bank-papua.png" class="img-fluid" width="200">
+                                    <p class="card-text text-white p-0 teks-3">
+                                        No. Rekening
+                                    </p>
+                                    <input class="form-control text-center" type="text" value="013-201-000002141-1" id="copyText" readonly style="width:200px"> <br>
+                                    <a href="#amplop" id="copyBtn" class="btn btn-buka">
+                                        Salin
+                                    </a>
+                                    <br>
+                                    <p class="card-text text-white p-0 teks-3">
+                                        A/n. Septer
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                        </center>
+
+                        <center>
+                            <h1 id="buku-tamu" class="teks-1">Buku Tamu</h1>
+                            <h2 class="teks-1">Kirim Ucapan dan Doa</h2>
+                         </center>
+                        <div  class="card" style="border-radius: 25px; background-color:#fff; margin-bottom:15px;">
+                            <div class="card-body">
+                                <form action="isi.php" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama anda" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="ucapan" placeholder="Ucapan dan Doa" name="ucapan" rows="3" required></textarea >
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ket" id="inlineRadio1" value="Hadir">
+                                        <label class="form-check-label" for="inlineRadio1">Hadir</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ket" id="inlineRadio2" value="Tidak Hadir">
+                                        <label class="form-check-label" for="inlineRadio2">Tidak Hadir</label>
+                                    </div>
+                                    <button name="submit" type="submit" class="btn btn-buka mt-3" >Kirim</button>
+                                </form>
+                                                            
+                                    
+                                
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+             
+
+                <section class="container" id="amplop" style="background-image: url('assets/foto/bg-closing.png'); width: 100%; background-repeat: no-repeat; background-size: cover; padding-top: 5%;">
+                    <center>
+                        <img src="assets/foto/foto3.png" data-aos-duration="3000" class="img-fluid" width="228" alt=""  style="margin-top: 100px;">
+                        <p class="teks-2-1">Tuhan membuat segala sesuatu indah pada waktunya</p>
+                    </center>
+
+                    <center>
+                        <p class="text-white" style="padding-bottom: 100px;">
+                            © 2023, Yaswar Au. </p>
+                    </center>
+                </section>
+        </div>
+
+
+    </main>
+
+	<!-- JS here -->
+
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/vendor/popper.min.js"></script>
+        <script src="./assets/js/vendor/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/vendor/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/vendor/owl.carousel.min.js"></script>
+        <script src="./assets/js/vendor/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/vendor/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/vendor/wow.min.js"></script>
+		<script src="./assets/js/vendor/animated.headline.js"></script>
+        <script src="./assets/js/vendor/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/vendor/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/vendor/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/vendor/jquery.sticky.js"></script>
+
+        <!-- contact js -->
+        <script src="./assets/js/vendor/contact.js"></script>
+        <script src="./assets/js/vendor/jquery.form.js"></script>
+        <script src="./assets/js/vendor/jquery.validate.min.js"></script>
+        <script src="./assets/js/vendor/mail-script.js"></script>
+        <script src="./assets/js/vendor/jquery.ajaxchimp.min.js"></script>
+
+		<!-- Jquery Plugins, main Jquery -->
+        <script src="./assets/js/vendor/plugins.js"></script>
+        <script src="./assets/js/vendor/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            $("#play-btn").click(function(){
+                let btn_pause = document.getElementById("pause-btn");
+                let btn_play = document.getElementById("play-btn");
+                btn_pause.classList.remove("d-none");
+                btn_play.classList.add("d-none");
+                var audio = document.getElementById("audio");
+                audio.play();
+            });
+            $("#pause-btn").click(function(){
+                let btn_play = document.getElementById("play-btn");
+                let btn_pause = document.getElementById("pause-btn");
+                btn_play.classList.remove("d-none");
+                btn_pause.classList.add("d-none");
+                var audio = document.getElementById("audio");
+                audio.pause();
+            });
+
+            $("#btn-buka").click(function(){
+                let btn_pause = document.getElementById("pause-btn");
+                let nav = document.getElementById("navbar");
+                let isi = document.getElementById("isi");
+                var cover = document.getElementById("cover-depan");
+                cover.classList.add("d-none");
+                nav.classList.remove("d-none");
+                isi.classList.remove("d-none");
+                btn_pause.classList.remove("d-none");
+                var audio = document.getElementById("audio");
+                audio.play();
+            });
+
+            const copyBtn = document.getElementById('copyBtn')
+            const copyText = document.getElementById('copyText')
+
+            copyBtn.onclick = () => {
+                copyText.select();    // Selects the text inside the input
+                document.execCommand('copy');    // Simply copies the selected text to clipboard 
+                Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    text: 'No Rekening Tercopy',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+            }
+        </script>
+
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $(document).ready(function(){
+	//
+  (function(e){
+		e.fn.countdown = function (t, n){
+			function i(){
+				eventDate = Date.parse(r.date) / 1e3;
+				currentDate = Math.floor(e.now() / 1e3);
+				//
+				if(eventDate <= currentDate){
+					n.call(this);
+					clearInterval(interval)
+				}
+				//
+				seconds = eventDate - currentDate;
+				days = Math.floor(seconds / 86400);
+				seconds -= days * 60 * 60 * 24;
+				hours = Math.floor(seconds / 3600);
+				seconds -= hours * 60 * 60;
+				minutes = Math.floor(seconds / 60);
+				seconds -= minutes * 60;
+				//
+				days == 1 ? thisEl.find(".timeRefDays").text("Days") : thisEl.find(".timeRefDays").text("Days");
+				hours == 1 ? thisEl.find(".timeRefHours").text("Hours") : thisEl.find(".timeRefHours").text("Hours");
+				minutes == 1 ? thisEl.find(".timeRefMinutes").text("Minutes") : thisEl.find(".timeRefMinutes").text("Minutes");
+				seconds == 1 ? thisEl.find(".timeRefSeconds").text("Seconds") : thisEl.find(".timeRefSeconds").text("Seconds");
+				//
+				if(r["format"] == "on"){
+					days = String(days).length >= 2 ? days : "0" + days;
+					hours = String(hours).length >= 2 ? hours : "0" + hours;
+					minutes = String(minutes).length >= 2 ? minutes : "0" + minutes;
+					seconds = String(seconds).length >= 2 ? seconds : "0" + seconds
+				}
+				//
+				if(!isNaN(eventDate)){
+					thisEl.find(".days").text(days);
+					thisEl.find(".hours").text(hours);
+					thisEl.find(".minutes").text(minutes);
+					thisEl.find(".seconds").text(seconds)
+				}
+        else{
+          errorMessage = "Invalid date. Example: 27 March 2015 17:00:00";
+					alert(errorMessage);
+					console.log(errorMessage);
+					clearInterval(interval)
+				}
+			}
+			//
+			var thisEl = e(this);
+			var r = {
+				date: null,
+				format: null
+			};
+			//
+			t && e.extend(r, t);
+			i();
+			interval = setInterval(i, 1e3)
+		}
+	})(jQuery);
+	//
+	$(document).ready(function(){
+		function e(){
+			var e = new Date;
+			e.setDate(e.getDate() + 60);
+			dd = e.getDate();
+			mm = e.getMonth() + 1;
+			y = e.getFullYear();
+			futureFormattedDate = mm + "/" + dd + "/" + y;
+			return futureFormattedDate
+		}
+		//
+		$("#countdown").countdown({
+			date: "04 August 2022 23:59:59", // change date/time here - do not change the format!
+			format: "on"
+		});
+		$("#countdown1").countdown({
+			date: "04 August 2022 23:59:59", // change date/time here - do not change the format!
+			format: "on"
+		});
+	});
+});
+        </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            stagePadding: 50,
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+    </body>
+</html>
