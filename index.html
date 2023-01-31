@@ -252,23 +252,21 @@
                          </center>
                         <div  class="card" style="border-radius: 25px; background-color:#fff; margin-bottom:15px;">
                             <div class="card-body">
-                                <form action="isi.php" method="post">
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama anda" required>
                                     </div>
                                     <div class="form-group">
                                         <textarea class="form-control" id="ucapan" placeholder="Ucapan dan Doa" name="ucapan" rows="3" required></textarea >
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="ket" id="inlineRadio1" value="Hadir">
-                                        <label class="form-check-label" for="inlineRadio1">Hadir</label>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Kehadiran</label>
+                                        <select class="form-select form-select-lg" name="kehadiran" id="kehadiran">
+                                            <option value="Hadir">Hadir</option>
+                                            <option value="Tidak">Tidak Hadir</option>
+                                        </select>
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="ket" id="inlineRadio2" value="Tidak Hadir">
-                                        <label class="form-check-label" for="inlineRadio2">Tidak Hadir</label>
-                                    </div>
-                                    <button name="submit" type="submit" class="btn btn-buka mt-3" >Kirim</button>
-                                </form>
+                                    <br><br><br><br>
+                                    <button name="submit" type="submit" onclick="insert_value()" class="btn btn-buka mt-3" >Kirim</button>
                                                             
                                     
                                 
@@ -424,7 +422,7 @@
 					thisEl.find(".seconds").text(seconds)
 				}
         else{
-          errorMessage = "Invalid date. Example: 27 March 2015 17:00:00";
+          errorMessage = "Invalid date. Example: 27 March 2025 17:00:00";
 					alert(errorMessage);
 					console.log(errorMessage);
 					clearInterval(interval)
@@ -455,11 +453,11 @@
 		}
 		//
 		$("#countdown").countdown({
-			date: "04 August 2022 23:59:59", // change date/time here - do not change the format!
+			date: "04 August 2023 23:59:59", // change date/time here - do not change the format!
 			format: "on"
 		});
 		$("#countdown1").countdown({
-			date: "04 August 2022 23:59:59", // change date/time here - do not change the format!
+			date: "04 August 2023 23:59:59", // change date/time here - do not change the format!
 			format: "on"
 		});
 	});
@@ -485,5 +483,48 @@
             }
         })
     </script>
+
+    <!-- Function untuk insert data -->
+    
+        <script>
+        var script_url = "https://script.google.com/macros/s/AKfycby1Q2oATlNfwEacioOp2_v6LZJS7cH6qSTeihqfMlqjT-yUhpllvmsEv7NJojftc3yf8Q/exec";
+  
+            function insert_value()
+            {
+                let nama = $("#nama").val();
+                let ucapan = $("#ucapan").val();
+                let kehadiran = $("#kehadiran").val();
+                if(nama && ucapan && kehadiran )
+                {
+                    console.info(nama)
+                    console.info(ucapan)
+                    console.info(kehadiran)
+
+                    let url = script_url+"?callback=ctrlq&nama="+nama+"&ucapan="+ucapan+"&kehadiran="+kehadiran+"&action=insert";
+                    $("input[type='text']").attr("disabled","disabled");
+                    $("input[type='number']").attr("disabled","disabled");
+                    $("input[type='button']").attr("disabled","disabled");
+                    $("textarea").attr("disabled","disabled");
+                    $("select").attr("disabled","disabled");
+                    
+                    var request = jQuery.ajax({
+                    crossDomain: true,
+                    url: url ,
+                    method: "GET",
+                    dataType: "jsonp"
+                    });
+
+
+                    Swal.fire({         //displays a pop up with sweetalert
+                    icon: 'success',
+                    text: 'Pesan sudah tersimpan !',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
+                }else{
+                    alert('Harap diisi dengan benar !')
+                }
+            }
+        </script>
     </body>
 </html>
